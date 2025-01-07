@@ -20,7 +20,7 @@ export default function Footer() {
               О нас
             </Link>
             <Link href={"/contact"} className="text-gray-400 hover:text-white">
-              Контакты
+              Наши контакты
             </Link>
           </nav>
         </div>
