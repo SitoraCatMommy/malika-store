@@ -51,14 +51,15 @@ export default function Home() {
 
       <div className="bg-white p-6 rounded-xl shadow-sm">
         <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4"><Shield className="w-6 h-6 text-purple-700"/></div> 
-        <h3 className="text-xl font-semibold mb-2">Быстрая доставка</h3> 
-        <p className="text-gray-600">Доставляем до 24 часов</p>
+        <h3 className="text-xl font-semibold mb-2">Гарантия качества</h3> 
+        <p className="text-gray-600">Официальная гарантия на всю продукцию и сертифицированное
+        обслуживание</p>
       </div>
 
       <div className="bg-white p-6 rounded-xl shadow-sm">
         <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4"><Clock className="w-6 h-6 text-purple-700"/></div> 
-        <h3 className="text-xl font-semibold mb-2">Быстрая доставка</h3> 
-        <p className="text-gray-600">Доставляем до 24 часов</p>
+        <h3 className="text-xl font-semibold mb-2">Поддержка 24/7</h3> 
+        <p className="text-gray-600">Круглосуточная поддержка и консультации от наших специалистов</p>
       </div>
 
       </div>
@@ -103,7 +104,34 @@ export default function Home() {
 
     </section>
 
- 
+    <section className="py-16 bg-purple-700">
+
+      <div className="container mx-auto px-4">
+
+        <div className="max-w-2xl mx-auto text-center">
+
+          <h2 className="text-3xl font-bold text-white mb-4">Подпишитесь на наши новости</h2>
+
+          <p className="text-purple-100 mb-8">Получайте первыми информацию о новинках, акциях и специальных
+          предложениях</p>
+
+          <form className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+            <input 
+            type="email"
+            placeholder="Введите вашу почту"
+            className="flex-1 px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-white/50"/>
+            <button 
+            type="submit"
+            className="px-6 py-3 bg-white text-purple-800 rounded-3xl font-semibold hover:bg-purple-100 transition-colors"
+            >Подпишитесь</button>
+          </form>
+
+        </div>
+
+      </div>
+
+
+    </section>
 
     </div>
     
