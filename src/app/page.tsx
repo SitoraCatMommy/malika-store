@@ -68,15 +68,42 @@ export default function Home() {
     </section>
 
 
-    <section>
+    <section className="py-16">
+
+      <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Популярные категории</h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {["Ноутбуки", "Смартфоны", "Планшеты", "Аксессуары"].map(
+            (category, index) => (
+              
+              <div 
+              key={index}
+              className="group relative h-64 rounded-xl overflow-hidden">
+                <Image src={`/images/category-${index+1}.jpg`} alt={category} fill
+                className="object-cover group-hover:scale-105 transition-transform duration-300"/>
+      
+                <div className="absolute bottom-0 left-0 right-0 p-6">
+                 
+                  <h3 className="text-xl font-semibold text-white mb-2">{category}</h3>
+                  <Link href={`/products?category=${category}`} className="text-blue-400 hover:text-blue-300 transition-colors">
+                  Смотреть все
+                  </Link>
+                
+                </div>
+              
+              </div>
+            )
+          )}
+
+        </div>
+        
+      </div>
 
     </section>
 
-
-    <section>
-
-    </section>
-    
+ 
 
     </div>
     
