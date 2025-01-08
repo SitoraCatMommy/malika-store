@@ -3,6 +3,13 @@ import { Menu, Search, ShoppingCart, X } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation"
 import { useState } from "react";
+import {Dancing_Script} from "next/font/google";
+
+
+export const dancingScript = Dancing_Script({ 
+  subsets: ['latin'],
+  weight: ['400', '700']
+})
 
 
 export default function Header() {
@@ -16,7 +23,7 @@ export default function Header() {
             
             <div className="flex items-center justify-between h-16">
             <Link href={"/"} className="flex items-center">
-            <span className="text-xl font-bold text-white">Malika Store</span>
+            <span className={`${dancingScript.className} text-3xl font-bold text-white`}>Malika Store</span>
             </Link>
 
             {/* menu for desktop*/}
